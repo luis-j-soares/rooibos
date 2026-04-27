@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TestGroup - Documentation</title>
+    <title>source/rooibos/TestGroup.bs - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,1067 +29,291 @@
 
 <div id="main">
     
-    <h1 class="page-title">TestGroup</h1>
-    
-
-    
-
-
-
-
-<section>
-
-<header>
-    
-        <h2>
-            <span class="ancestors"><a href="rooibos.html">rooibos</a>.</span>
-        
-        TestGroup
-        </h2>
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="TestGroup"><span class="type-signature"></span>new TestGroup<span class="signature">(testSuite, data)</span><span class="type-signature"> &rarr; {<a href="rooibos.TestGroup.html">rooibos.TestGroup</a>}</span></h4>
-
-    
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>test state</p></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>testSuite</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>setupFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tearDownFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>beforeEachFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>afterEachFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isSolo</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isLegacy</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isIgnored</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>stats</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>scene</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>lineNumber</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>integer</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>top</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>valid</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>hasFailures</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isNodeTest</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>nodeName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>testsData</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tests</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>dynamic</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>deferred</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line25">line 25</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>testSuite</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code><a href="rooibos.BaseTestSuite.html">rooibos.BaseTestSuite</a></code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>roAssociativeArray</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code><a href="rooibos.TestGroup.html">rooibos.TestGroup</a></code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-    
-    </div>
-
-    
-
-    
-
-    
-
-     
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="run"><span class="type-signature"></span>run<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>TODO CONVERT THIS TO ASYNC</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line41">line 41</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="runAsync"><span class="type-signature"></span>runAsync<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line53">line 53</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="runSync"><span class="type-signature"></span>runSync<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line47">line 47</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-    
-
-    
-
-    
-</article>
-
-</section>
+    <h1 class="page-title">source/rooibos/TestGroup.bs</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>namespace rooibos
+    class TestGroup
+        'test state
+        name = "Unnamed Suite"
+
+        testSuite = invalid
+        setupFunctionName = invalid
+        tearDownFunctionName = invalid
+        beforeEachFunctionName = invalid
+        afterEachFunctionName = invalid
+        isSolo = false
+        isLegacy = false
+        isIgnored = false
+        stats = invalid
+        scene = invalid
+        lineNumber = 00
+        top = invalid
+        valid = false
+        hasFailures = false
+        isNodeTest = false
+        nodeName = invalid
+        testsData = invalid
+        tests = []
+        public deferred = invalid
+
+        function new(testSuite as rooibos.BaseTestSuite, data as roAssociativeArray)
+            m.testSuite = testSuite
+            m.name = data.name
+            m.valid = data.valid
+            m.hasFailures = testSuite.hasFailures
+            m.isSolo = data.isSolo
+            m.isIgnored = data.isIgnored
+            m.isAsync = data.isAsync
+            m.asyncTimeout = data.asyncTimeout
+            m.testsData = data.testCases
+            m.isNodeTest = testSuite.isNodeTest
+            m.nodeName = invalid
+            m.setupFunctionName = data.setupFunctionName
+            m.tearDownFunctionName = data.tearDownFunctionName
+            m.beforeEachFunctionName = data.beforeEachFunctionName
+            m.afterEachFunctionName = data.afterEachFunctionName
+            m.lineNumber = data.lineNumber
+
+            if m.isNodeTest then
+                m.deferred = rooibos.promises.create()
+            end if
+
+            m.global = testSuite.global
+            m.top = testSuite.top
+            m.scene = testSuite.scene
+            m.stats = new rooibos.Stats()
+        end function
+
+        '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        '++ running
+        '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        private currentTestIndex = 0
+        'TODO CONVERT THIS TO ASYNC
+        function run() as dynamic
+            rooibos.common.logTrace(">>>>>>>>>>>>")
+            rooibos.common.logTrace("RUNNING TEST GROUP")
+            m.testRunner = m.testSuite.testRunner
+            m.notifyReportersOnTestGroupBegin()
+            if m.testSuite.isNodeTest = true then
+                rooibos.common.logTrace("THIS GROUP IS ASYNC")
+                m.runAsync()
+                return m.deferred
+            else
+                rooibos.common.logTrace("THIS GROUP IS SYNC")
+                m.runSync()
+                return true
+            end if
+        end function
+
+        function runSync()
+            isOk = m.runSuiteFunction(m.setupFunctionName, "setup")
+
+            if isOk then
+                for each testData in m.testsData
+                    test = new rooibos.Test(m, testData)
+                    m.tests.push(test)
+
+                    if test.isIgnored then
+                        m.notifyReportersOnTestBegin(test)
+                        m.testSuite.runTest(test)
+                        m.notifyReportersOnTestComplete(test)
+                        m.stats.appendTestResult(test.result)
+                        continue for
+                    end if
+
+                    isOk = m.runSuiteFunction(m.beforeEachFunctionName, "beforeEach", test)
+
+                    if isOk then
+                        m.notifyReportersOnTestBegin(test)
+                        m.testSuite.runTest(test)
+                        m.notifyReportersOnTestComplete(test)
+                    end if
+
+                    m.runSuiteFunction(m.afterEachFunctionName, "afterEach", test)
+
+                    m.stats.appendTestResult(test.result)
+
+                    if m.stats.hasFailures and m.testSuite.isFailingFast then
+                        rooibos.common.logTrace("Terminating group due to failed test")
+                        exit for
+                    end if
+                end for
+            else
+                rooibos.common.logError("ERROR running test setup function")
+            end if
+            m.notifyReportersOnTestGroupComplete()
+            m.runSuiteFunction(m.tearDownFunctionName, "tearDown")
+        end function
+
+
+        function runAsync()
+            isOk = m.runSuiteFunction(m.setupFunctionName, "setup")
+            m.testTimer = createObject("roTimespan")
+
+            if isOk then
+                m.testRunner.currentGroup = m
+                for each testData in m.testsData
+                    test = new rooibos.Test(m, testData)
+                    m.tests.push(test)
+                end for
+                m.currentTestIndex = -1
+                m.runNextAsync()
+            else
+                rooibos.common.logError("ERROR running test setup function")
+                m.runSuiteFunction(m.tearDownFunctionName, "tearDown")
+            end if
+        end function
+
+        private function runNextAsync() as void
+            rooibos.common.logTrace("Getting next async test")
+            m.currentTestIndex++
+            m.currentTest = m.tests[m.currentTestIndex]
+            m.testSuite.isDoneCalled = false
+            m.testTimer.mark()
+            if m.currentTest = invalid then
+                rooibos.common.logTrace("All tests are finished")
+                m.finishAsyncTests()
+            else
+                test = m.currentTest
+                ' Check to see if the test is ignored or if the suite is timed out
+                ' and skip the before and after hooks
+                if test.isIgnored or m.testSuite.isSuiteTimedOut() then
+                    m.notifyReportersOnTestBegin(test)
+                    m.testSuite.runTest(test)
+                    m.onAsyncTestComplete()
+                    return
+                end if
+
+                isOk = m.runSuiteFunction(m.beforeEachFunctionName, "beforeEach", m.currentTest)
+                if isOk then
+                    m.notifyReportersOnTestBegin(test)
+
+                    m.testSuite.runTest(test)
+                    rooibos.common.logDebug("Waiting on deferred test results")
+
+                    rooibos.promises.chain(test.deferred, { self: m, test: test }).then(function(_ as dynamic, context as roAssociativeArray)
+                        rooibos.common.logDebug("Promise resolved")
+                        context.self.testSuite.done()
+                    end function).catch(function(error as dynamic, context as roAssociativeArray)
+                        rooibos.common.logDebug("Promise rejected")
+                        if rooibos.common.isAssociativeArray(error) and not error.isEmpty() and rooibos.common.isArray(error.backtrace) and not error.backtrace.isEmpty() and rooibos.common.isBoolean(error.rethrown) then
+                            context.self.testSuite.failCrash(error)
+                        else
+                            context.self.testSuite.fail("Test failed due to promise rejection")
+                        end if
+                        context.self.testSuite.done()
+                    end function).finally(function(context as roAssociativeArray)
+                        context.self.onAsyncTestComplete()
+                    end function)
+                else
+                    rooibos.common.logTrace("Error running test before each function")
+                    m.isTestFailedDueToEarlyExit = true
+                    m.finishAsyncTests()
+                end if
+            end if
+        end function
+
+        private function onAsyncTestComplete()
+            rooibos.common.logTrace("++ CURRENT TEST COMPLETED")
+            m.notifyReportersOnTestComplete(m.currentTest)
+            m.runSuiteFunction(m.afterEachFunctionName, "afterEach", m.currentTest)
+            m.stats.appendTestResult(m.currentTest.result)
+
+            if m.stats.hasFailures and m.testSuite.isFailingFast then
+                rooibos.common.logTrace("Terminating group due to failed test")
+                m.isTestFailedDueToEarlyExit = true
+                m.finishAsyncTests()
+            else
+                m.runNextAsync()
+            end if
+
+        end function
+
+        private function finishAsyncTests()
+            m.runSuiteFunction(m.tearDownFunctionName, "tearDown")
+            rooibos.common.logTrace("Indicating test suite is done")
+            m.notifyReportersOnTestGroupComplete()
+            rooibos.promises.resolve(true, m.deferred)
+        end function
+
+        private function runSuiteFunction(methodName as string, defaultMethodName as string, test = invalid as rooibos.Test) as boolean
+
+            if methodName = invalid or methodName = "" then
+                methodName = defaultMethodName
+            end if
+            if m.testSuite.catchCrashes and not m.testSuite.noCatch and not (test &lt;> invalid and test.noCatch) then
+                ' Add the users suite functions execution time to the suites current execution time
+                timespan = createObject("roTimespan")
+                try
+                    m.testSuite[methodName]()
+                    m.testSuite.currentExecutionTime += timespan.totalMilliseconds()
+                    return true
+                catch error
+                    if test &lt;> invalid then
+                        test.result.crash("function " + methodName + "crashed!", error)
+                        m.testSuite.currentExecutionTime += timespan.totalMilliseconds()
+                    end if
+                end try
+            else
+                timespan = createObject("roTimespan")
+                m.testSuite[methodName]()
+                m.testSuite.currentExecutionTime += timespan.totalMilliseconds()
+                return true
+            end if
+
+            return false
+        end function
+
+        private function notifyReportersOnTestGroupBegin()
+            for each reporter in m.testSuite.testReporters
+                if rooibos.common.isFunction(reporter.onTestGroupBegin) then
+                    reporter.onTestGroupBegin({ group: m })
+                end if
+            end for
+        end function
+
+        private function notifyReportersOnTestBegin(test as rooibos.Test)
+            for each reporter in m.testSuite.testReporters
+                if rooibos.common.isFunction(reporter.onTestBegin) then
+                    reporter.onTestBegin({ test: test })
+                end if
+            end for
+        end function
+
+        private function notifyReportersOnTestComplete(test as rooibos.Test)
+            if test.result.time > 0 then
+                ' Add the test execution time to the suites current execution time
+                m.testSuite.currentExecutionTime += test.result.time
+            end if
+
+            for each reporter in m.testSuite.testReporters
+                if rooibos.common.isFunction(reporter.onTestComplete) then
+                    reporter.onTestComplete({ test: test })
+                end if
+            end for
+        end function
+
+        private function notifyReportersOnTestGroupComplete()
+            for each reporter in m.testSuite.testReporters
+                if rooibos.common.isFunction(reporter.onTestGroupComplete) then
+                    reporter.onTestGroupComplete({ group: m })
+                end if
+            end for
+        end function
+    end class
+end namespace
+</code></pre>
+        </article>
+    </section>
 
 
 

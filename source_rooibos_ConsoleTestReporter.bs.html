@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TestGroup - Documentation</title>
+    <title>source/rooibos/ConsoleTestReporter.bs - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,1067 +29,251 @@
 
 <div id="main">
     
-    <h1 class="page-title">TestGroup</h1>
-    
-
-    
-
-
-
-
-<section>
-
-<header>
-    
-        <h2>
-            <span class="ancestors"><a href="rooibos.html">rooibos</a>.</span>
-        
-        TestGroup
-        </h2>
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="TestGroup"><span class="type-signature"></span>new TestGroup<span class="signature">(testSuite, data)</span><span class="type-signature"> &rarr; {<a href="rooibos.TestGroup.html">rooibos.TestGroup</a>}</span></h4>
-
-    
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>test state</p></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>testSuite</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>setupFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tearDownFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>beforeEachFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>afterEachFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isSolo</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isLegacy</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isIgnored</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>stats</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>scene</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>lineNumber</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>integer</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>top</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>valid</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>hasFailures</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isNodeTest</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>nodeName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>testsData</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tests</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>dynamic</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>deferred</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line25">line 25</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>testSuite</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code><a href="rooibos.BaseTestSuite.html">rooibos.BaseTestSuite</a></code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>roAssociativeArray</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code><a href="rooibos.TestGroup.html">rooibos.TestGroup</a></code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-    
-    </div>
-
-    
-
-    
-
-    
-
-     
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="run"><span class="type-signature"></span>run<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>TODO CONVERT THIS TO ASYNC</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line41">line 41</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="runAsync"><span class="type-signature"></span>runAsync<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line53">line 53</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="runSync"><span class="type-signature"></span>runSync<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line47">line 47</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-    
-
-    
-
-    
-</article>
-
-</section>
+    <h1 class="page-title">source/rooibos/ConsoleTestReporter.bs</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import "pkg:/source/rooibos/BaseTestReporter.bs"
+
+namespace rooibos
+    ' @ignore
+    class ConsoleTestReporter extends rooibos.BaseTestReporter
+
+        private lineWidth = 60
+
+        function new(runner as rooibos.TestRunner)
+            super(runner)
+            if m.config.lineWidth &lt;> invalid then
+                m.lineWidth = m.config.lineWidth
+            else
+                m.lineWidth = 60
+            end if
+        end function
+
+        override function onSuiteBegin(event as rooibos.TestReporterOnSuiteBeginEvent) as void
+            if event.suite.isIgnored then return
+            ? ""
+            ? rooibos.common.fillText("> SUITE: " + event.suite.name, ">", 80)
+        end function
+
+        override function onTestGroupBegin(event as rooibos.TestReporterOnTestGroupBeginEvent) as void
+            if event.group.isIgnored then return
+            ? ""
+            ? rooibos.common.fillText(">>>> Describe: " + event.group.name, ">", 80)
+            ? `  Location: file://${event.group.testSuite.filePath.trim()}:${event.group.lineNumber}`
+            ? ""
+        end function
+
+        override function onTestBegin(event as rooibos.TestReporterOnTestBeginEvent) as void
+            if event.test.isIgnored then return
+            ? ""
+            ? rooibos.common.fillText(">>>>>> It: " + event.test.name, ">", 80)
+            ? `  Location: file://${event.test.testSuite.filePath.trim()}:${event.test.lineNumber}`
+            ? ""
+        end function
+
+        override function onTestComplete(event as rooibos.TestReporterOnTestCompleteEvent) as void
+            if event.test.isIgnored then return
+            ? rooibos.common.fillText("&lt;&lt;&lt;&lt; END It: " + event.test.name + " (" + event.test.result.getStatusText() + ") ", "&lt;", 80)
+        end function
+
+        ' override function onTestGroupComplete(event as rooibos.TestReporterOnTestGroupCompleteEvent)
+        '   'override me
+        ' end function
+
+        ' override function onSuiteComplete(event as rooibos.TestReporterOnSuiteCompleteEvent)
+        '   'override me
+        ' end function
+
+        override function onEnd(event as rooibos.TestReporterOnEndEvent)
+            m.allStats = event.stats
+            m.startReport()
+            for each testSuite in m.testRunner.testSuites
+                if not testSuite.isIgnored then
+                    if not m.allStats.hasFailures or ((not m.config.showOnlyFailures) or testSuite.stats.failedCount > 0 or testSuite.stats.crashedCount > 0) then
+                        m.printSuiteStart(testSuite)
+
+                        for each testGroup in testSuite.groups
+                            m.printGroup(testGroup)
+                        end for
+                    end if
+                end if
+            end for
+
+            m.printLine()
+
+            ignoredInfo = m.testRunner.runtimeConfig.getIgnoredTestInfo()
+            m.printLine(0, "Total: " + rooibos.common.AsString(m.allStats.ranCount))
+            m.printLine(0, "  Passed: " + rooibos.common.AsString(m.allStats.passedCount))
+            m.printLine(0, "  Crashed: " + rooibos.common.AsString(m.allStats.crashedCount))
+            m.printLine(0, "  Failed: " + rooibos.common.AsString(m.allStats.failedCount))
+            m.printLine(0, "  Ignored: " + rooibos.common.AsString(ignoredInfo.count))
+            m.printLine(0, "  Time: " + rooibos.common.AsString(m.allStats.time) + "ms")
+            m.printLine()
+            m.printLine()
+
+            if ignoredInfo.count > 0 then
+                m.printLine(0, "IGNORED TESTS:")
+                for each ignoredItemName in ignoredInfo.items
+                    m.printLine(1, ignoredItemName)
+                end for
+                m.printLine()
+                m.printLine()
+            end if
+            overallResult = ""
+            if m.allStats.hasFailures then
+                overallResult = "Fail"
+            else
+                overallResult = "Success"
+            end if
+            m.printLine(0, "RESULT: " + overallResult)
+            m.endReport()
+        end function
+
+        function printGroup(testGroup as rooibos.TestGroup) as void
+            if testGroup.isIgnored then return
+            isGroupPrinted = false
+
+            for each test in testGroup.tests
+                if not test.result.isSkipped then
+                    if not m.allStats.hasFailures or ((not m.config.showOnlyFailures) or test.result.isFail) then
+                        if not isGroupPrinted then
+                            m.printGroupStart(testGroup)
+                            isGroupPrinted = true
+                        end if
+
+                        m.printTest(test)
+                    end if
+                end if
+            end for
+
+            if isGroupPrinted then
+                m.printLine(0, " |")
+            end if
+        end function
+
+        function printTest(test as rooibos.Test)
+            testLocationLine = StrI(test.lineNumber).trim()
+
+            locationLine = invalid
+            testChar = ""
+            if test.result.isCrash then
+                testChar = "|"
+                locationLine = StrI(test.lineNumber).trim()
+            else if test.result.isFail then
+                testChar = "-"
+                locationLine = StrI(test.result.lineNumber).trim()
+            else
+                testChar = "|"
+                locationLine = StrI(test.lineNumber).trim()
+            end if
+
+            testLocationText = "file://" + test.testSuite.filePath.trim() + ":" + testLocationLine
+
+            timeText = ""
+            if m.config.printTestTimes = true then
+                timeText = " (" + strI(test.result.time).trim() + "ms)"
+            end if
+
+            insetText = ""
+            if test.isParamTest &lt;> true then
+                messageLine = rooibos.common.fillText(" " + testChar + " |--" + test.name + " : ", ".", m.lineWidth)
+                m.printLine(0, messageLine + test.result.getStatusText() + timeText)
+                m.printLine(0, " | " + insetText + "  |--Test : " + testLocationText)
+            else if test.paramTestIndex = 0 then
+                name = test.name
+                if len(name) > 1 and right(name, 1) = "0" then
+                    name = left(name, len(name) - 1)
+                end if
+                m.printLine(0, " " + testChar + " |--" + name + " : ")
+                m.printLine(0, " | " + insetText + "  |--Test : " + testLocationText)
+            end if
+
+            locationText = "file://" + test.testSuite.filePath.trim() + ":" + locationLine
+            if test.isParamTest = true then
+                insetText = "  "
+
+                rawParams = invalid
+                if type(test.rawParams) = "roAssociativeArray" then
+                    rawParams = {}
+                    for each key in test.rawParams
+                        if type(test.rawParams[key]) &lt;> "Function" and type(test.rawParams[key]) &lt;> "roFunction" then
+                            rawParams[key] = test.rawParams[key]
+                        end if
+                    end for
+                else
+                    rawParams = test.rawParams
+                end if
+                messageLine = rooibos.common.fillText(" " + testChar + insetText + " |--" + formatJson(rawParams) + " : ", ".", m.lineWidth)
+                m.printLine(0, messageLine + test.result.getStatusText() + timeText)
+            end if
+
+            if test.result.isCrash then
+                m.printLine(0, " | " + insetText + "  |--Crashed at: " + locationText)
+                m.printStackTrace(insetText, test.result.error)
+                m.printLine(0, " | ")
+            else if test.result.isFail then
+                m.printLine(0, " | " + insetText + "  |--Failed at: " + locationText)
+                if test.isParamTest = true then
+                    m.printLine(0, " | " + insetText + "  |--Param Line: " + StrI(test.paramLineNumber).trim())
+                end if
+                m.printLine(0, " | " + insetText + "  |--Error Message: " + test.result.message)
+                m.printLine(0, " | ")
+            end if
+        end function
+
+        function printStackTrace(insetText as string, error as roAssociativeArray)
+            m.printLine(0, " | " + insetText + "  |")
+            m.printLine(0, " | " + insetText + "  |--Message: " + error.message)
+            m.printLine(0, " | " + insetText + "  |--Stack trace: ")
+
+            for i = error.backTrace.count() - 1 to 0 step -1
+                e = error.backTrace[i]
+                if e.filename.instr("pkg:/source/rooibos") = -1 then
+                    m.printLine(0, " | " + insetText + "    " + e.filename + "(" + strI(e.line_number).trim() + ")")
+                end if
+            end for
+        end function
+
+        function startReport()
+            m.printLine()
+            m.printLine(0, "[START TEST REPORT]")
+            m.printLine()
+        end function
+
+        function endReport()
+            m.printLine()
+            m.printLine(0, "[END TEST REPORT]")
+            m.printLine()
+        end function
+
+        function printSuiteStart(testSuite as rooibos.BaseTestSuite)
+            m.printLine(0, " " + testSuite.name + " file://" + testSuite.filePath.trim() + ":" + str(testSuite.lineNumber).trim())
+        end function
+
+        function printGroupStart(testGroup as rooibos.TestGroup)
+            m.printLine(0, " |-" + testGroup.name)
+        end function
+
+        '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        '++ printing
+        '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        function printLine(depth = 0 as integer, text = "" as string)
+            ? " " ; text
+        end function
+
+    end class
+end namespace
+</code></pre>
+        </article>
+    </section>
 
 
 

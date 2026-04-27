@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TestGroup - Documentation</title>
+    <title>source/rooibos/Test.bs - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,1067 +29,218 @@
 
 <div id="main">
     
-    <h1 class="page-title">TestGroup</h1>
-    
-
-    
-
-
-
-
-<section>
-
-<header>
-    
-        <h2>
-            <span class="ancestors"><a href="rooibos.html">rooibos</a>.</span>
-        
-        TestGroup
-        </h2>
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="TestGroup"><span class="type-signature"></span>new TestGroup<span class="signature">(testSuite, data)</span><span class="type-signature"> &rarr; {<a href="rooibos.TestGroup.html">rooibos.TestGroup</a>}</span></h4>
-
-    
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>test state</p></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>testSuite</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>setupFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tearDownFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>beforeEachFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>afterEachFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isSolo</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isLegacy</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isIgnored</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>stats</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>scene</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>lineNumber</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>integer</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>top</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>valid</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>hasFailures</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isNodeTest</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>nodeName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>testsData</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tests</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>dynamic</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>deferred</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line25">line 25</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>testSuite</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code><a href="rooibos.BaseTestSuite.html">rooibos.BaseTestSuite</a></code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>roAssociativeArray</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code><a href="rooibos.TestGroup.html">rooibos.TestGroup</a></code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-    
-    </div>
-
-    
-
-    
-
-    
-
-     
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="run"><span class="type-signature"></span>run<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>TODO CONVERT THIS TO ASYNC</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line41">line 41</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="runAsync"><span class="type-signature"></span>runAsync<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line53">line 53</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="runSync"><span class="type-signature"></span>runSync<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line47">line 47</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-    
-
-    
-
-    
-</article>
-
-</section>
+    <h1 class="page-title">source/rooibos/Test.bs</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import "pkg:/source/rooibos/TestResult.bs"
+import "pkg:/source/rooibos/TestGroup.bs"
+
+namespace rooibos
+    ' @ignore
+    class Test
+
+        public name
+        public isSolo
+        public noCatch = false
+        public funcName
+        public isIgnored
+        public lineNumber
+        public paramLineNumber
+        public testSuite = invalid
+        public testGroup = invalid
+        public deferred = invalid
+
+        public rawParams
+        public paramTestIndex
+        public isParamTest = false
+        public isParamsValid = false
+        public expectedNumberOfParams = 0
+
+        public result = invalid
+
+        function new(testGroup as rooibos.TestGroup, data as roAssociativeArray, testSuite = invalid as rooibos.BaseTestSuite)
+            m.testGroup = testGroup
+            if testSuite &lt;> invalid then
+                m.testSuite = testSuite
+            else
+                m.testSuite = testGroup.testSuite
+            end if
+            m.isSolo = data.isSolo
+            m.noCatch = data.noCatch
+            m.funcName = data.funcName
+            m.isIgnored = data.isIgnored
+            m.isAsync = data.isAsync
+            m.asyncTimeout = data.asyncTimeout
+            m.slow = data.slow
+            m.name = data.name
+            m.lineNumber = data.lineNumber
+            m.paramLineNumber = data.paramLineNumber
+            m.rawParams = data.rawParams
+            m.paramTestIndex = data.paramTestIndex
+            m.isParamTest = data.isParamTest
+            m.expectedNumberOfParams = data.expectedNumberOfParams
+
+            if m.testSuite.isNodeTest then
+                m.deferred = rooibos.promises.create()
+            end if
+
+            if m.isParamTest then
+                m.name = m.name + strI(m.paramTestIndex)
+            end if
+
+            m.result = new rooibos.TestResult(m)
+        end function
+
+        function run() as dynamic
+            m.rooibosTimer = createObject("roTimespan")
+
+            if m.isParamTest then
+                m.rooibosTimer.mark()
+                promise = m.runParamsTest()
+            else
+                promise = m.testSuite[m.funcName]()
+            end if
+
+            if rooibos.promises.isPromise(promise) then
+                if m.testSuite.isNodeTest then
+                    m.markDoneWhenTestCompletes(promise)
+                else
+                    throw "Can not return a promise from a non-node test"
+                end if
+            else if m.testSuite.isNodeTest and not m.isAsync then
+                ' The test is a node test and not async so we need to resolve the deferred
+                ' immediately
+                m.recordExecutionTime()
+                rooibos.promises.resolve(invalid, m.deferred)
+            end if
+
+            if m.deferred &lt;> invalid then
+                m.recordExecutionTimeWhenDone()
+                m.registerTimeout()
+            else
+                m.recordExecutionTime()
+            end if
+
+            return m.deferred
+        end function
+
+        ' Sets up a promise chain to link the deferred to the test promise results
+        ' and resolves or rejects the deferred based on the result of the test promise.
+        ' Also records the execution time of the test if not already recorded.
+        function markDoneWhenTestCompletes(testPromise as roSGNoderooibos_promises_Promise)
+            rooibos.promises.chain(testPromise, m).then(function(result as dynamic, m as roAssociativeArray)
+                m.recordExecutionTime()
+                rooibos.common.logDebug("Test promise resolved")
+                rooibos.promises.resolve(result, m.deferred)
+            end function).catch(function(error as dynamic, m as roAssociativeArray)
+                m.recordExecutionTime()
+                rooibos.common.logDebug("Test promise rejected")
+                rooibos.promises.reject(error, m.deferred)
+            end function)
+        end function
+
+        function registerTimeout()
+            rooibos.promises.internal.delay(function(m as roAssociativeArray)
+                if not rooibos.promises.isComplete(m.deferred) then
+                    m.recordExecutionTime(m.asyncTimeout)
+                    m.testSuite.fail(`Test execution exceeded ${m.asyncTimeout}ms`)
+                    rooibos.promises.resolve(invalid, m.deferred)
+                end if
+            end function, m, m.asyncTimeout / 1000)
+        end function
+
+        function recordExecutionTimeWhenDone()
+            rooibos.promises.chain(m.deferred, m).then(function(result as dynamic, m as roAssociativeArray)
+                m.recordExecutionTime()
+                rooibos.promises.resolve(result, m.deferred)
+            end function).catch(function(error as dynamic, m as roAssociativeArray)
+                m.recordExecutionTime()
+                rooibos.promises.reject(error, m.deferred)
+            end function)
+        end function
+
+        function recordExecutionTime(time = m.rooibosTimer.totalMilliseconds() as integer)
+            if m.result.time = -1 then
+                m.result.time = time
+            end if
+        end function
+
+        function runParamsTest() as dynamic
+            testParams = m.getTestParams()
+
+            if m.expectedNumberOfParams = 1 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0])
+            else if m.expectedNumberOfParams = 2 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1])
+            else if m.expectedNumberOfParams = 3 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1], testParams[2])
+            else if m.expectedNumberOfParams = 4 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1], testParams[2], testParams[3])
+            else if m.expectedNumberOfParams = 5 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1], testParams[2], testParams[3], testParams[4])
+            else if m.expectedNumberOfParams = 6 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1], testParams[2], testParams[3], testParams[4], testParams[5])
+            else if m.expectedNumberOfParams = 7 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1], testParams[2], testParams[3], testParams[4], testParams[5], testParams[6])
+            else if m.expectedNumberOfParams = 8 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1], testParams[2], testParams[3], testParams[4], testParams[5], testParams[6], testParams[7])
+            else if m.expectedNumberOfParams = 9 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1], testParams[2], testParams[3], testParams[4], testParams[5], testParams[6], testParams[7], testParams[8])
+            else if m.expectedNumberOfParams = 10 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1], testParams[2], testParams[3], testParams[4], testParams[5], testParams[6], testParams[7], testParams[8], testParams[9])
+            else if m.expectedNumberOfParams = 11 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1], testParams[2], testParams[3], testParams[4], testParams[5], testParams[6], testParams[7], testParams[8], testParams[9], testParams[10])
+            else if m.expectedNumberOfParams = 12 then
+                m.rooibosTimer.mark()
+                return m.testSuite[m.funcName](testParams[0], testParams[1], testParams[2], testParams[3], testParams[4], testParams[5], testParams[6], testParams[7], testParams[8], testParams[9], testParams[10], testParams[11])
+            else if m.expectedNumberOfParams > 12 then
+                m.rooibosTimer.mark()
+                m.testSuite.fail("Test case had more than 12 params. Max of 12 params is supported")
+            end if
+
+            return invalid
+        end function
+
+        function getTestParams() as dynamic
+            params = []
+            for paramIndex = 0 to m.rawParams.count()
+                paramValue = m.rawParams[paramIndex]
+                if type(paramValue) = "roString" and len(paramValue) >= 8 and left(paramValue, 8) = "#RBSNode" then
+                    nodeType = "ContentNode"
+                    paramDirectiveArgs = paramValue.split("|")
+                    if paramDirectiveArgs.count() > 1 then
+                        nodeType = paramDirectiveArgs[1]
+                    end if
+                    paramValue = createObject("roSGNode", nodeType)
+                end if
+                params.push(paramValue)
+            end for
+            return params
+        end function
+
+    end class
+end namespace
+</code></pre>
+        </article>
+    </section>
 
 
 

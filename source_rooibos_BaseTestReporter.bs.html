@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TestGroup - Documentation</title>
+    <title>source/rooibos/BaseTestReporter.bs - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,1067 +29,118 @@
 
 <div id="main">
     
-    <h1 class="page-title">TestGroup</h1>
+    <h1 class="page-title">source/rooibos/BaseTestReporter.bs</h1>
     
 
     
 
 
 
-
-<section>
-
-<header>
-    
-        <h2>
-            <span class="ancestors"><a href="rooibos.html">rooibos</a>.</span>
-        
-        TestGroup
-        </h2>
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="TestGroup"><span class="type-signature"></span>new TestGroup<span class="signature">(testSuite, data)</span><span class="type-signature"> &rarr; {<a href="rooibos.TestGroup.html">rooibos.TestGroup</a>}</span></h4>
-
-    
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>test state</p></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>testSuite</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>setupFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tearDownFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>beforeEachFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>afterEachFunctionName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isSolo</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isLegacy</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isIgnored</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>stats</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>scene</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>lineNumber</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>integer</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>top</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>valid</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>hasFailures</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>isNodeTest</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>boolean</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>nodeName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>testsData</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tests</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>dynamic</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>deferred</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>invalid</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line25">line 25</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>testSuite</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code><a href="rooibos.BaseTestSuite.html">rooibos.BaseTestSuite</a></code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>roAssociativeArray</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code><a href="rooibos.TestGroup.html">rooibos.TestGroup</a></code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-    
-    </div>
-
-    
-
-    
-
-    
-
-     
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="run"><span class="type-signature"></span>run<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-<div class="description">
-    <p>TODO CONVERT THIS TO ASYNC</p>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line41">line 41</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="runAsync"><span class="type-signature"></span>runAsync<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line53">line 53</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
     
-</div>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>namespace rooibos
 
+    ' @ignore
+    class BaseTestReporter
 
+        public testRunner = invalid
+        public config = invalid
+        public allStats = invalid
+        public colorizeOutput = false
 
-</div>
-        
-            
-<div class="section-method">
+        function new(runner as dynamic)
+            m.testRunner = runner
+            m.config = runner.config
+            m.allStats = runner.stats
+            m.colorizeOutput = runner.config.colorizeOutput = true
+        end function
 
-    
-
-    <h4 class="name" id="runSync"><span class="type-signature"></span>runSync<span class="signature">()</span><span class="type-signature"> &rarr; {dynamic}</span></h4>
-
-    
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="source_rooibos_TestGroup.bs.html">source/rooibos/TestGroup.bs</a>, <a href="source_rooibos_TestGroup.bs.html#line47">line 47</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
+        function onBegin(event as rooibos.TestReporterOnBeginEvent)
+            'override me
+            rooibos.common.logDebug("BaseTestReporter.onBegin")
+        end function
 
+        function onSuiteBegin(event as rooibos.TestReporterOnSuiteBeginEvent)
+            'override me
+        end function
 
+        function onTestGroupBegin(event as rooibos.TestReporterOnTestGroupBeginEvent)
+            'override me
+        end function
 
+        function onTestBegin(event as rooibos.TestReporterOnTestBeginEvent)
+            'override me
+        end function
 
+        function onTestComplete(event as rooibos.TestReporterOnTestCompleteEvent)
+            'override me
+        end function
 
+        function onTestGroupComplete(event as rooibos.TestReporterOnTestGroupCompleteEvent)
+            'override me
+        end function
 
+        function onSuiteComplete(event as rooibos.TestReporterOnSuiteCompleteEvent)
+            'override me
+        end function
 
+        function onEnd(event as rooibos.TestReporterOnEndEvent)
+            'override me
+            rooibos.common.logDebug("BaseTestReporter.onEnd")
+        end function
 
+    end class
 
+    ' @ignore
+    interface TestReporterOnBeginEvent
+        runner as rooibos.TestRunner
+    end interface
 
+    ' @ignore
+    interface TestReporterOnSuiteBeginEvent
+        suite as rooibos.BaseTestSuite
+    end interface
 
+    ' @ignore
+    interface TestReporterOnTestGroupBeginEvent
+        group as rooibos.TestGroup
+    end interface
 
+    ' @ignore
+    interface TestReporterOnTestBeginEvent
+        test as rooibos.Test
+    end interface
 
+    ' @ignore
+    interface TestReporterOnTestCompleteEvent
+        test as rooibos.Test
+    end interface
 
+    ' @ignore
+    interface TestReporterOnTestGroupCompleteEvent
+        group as rooibos.TestGroup
+    end interface
 
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>dynamic</code></span>
-
-
-    </dd>
-</dl>
-
-
-    
-</div>
-
-
-
-</div>
-        
-    
-
-    
-
-    
-</article>
+    ' @ignore
+    interface TestReporterOnSuiteCompleteEvent
+        suite as rooibos.BaseTestSuite
+    end interface
 
-</section>
+    ' @ignore
+    ' @deprecated use rooibos.TestReporterOnEndEvent
+    interface ITestReporterOnEndEvent
+        stats as rooibos.Stats
+    end interface
+
+    ' @ignore
+    interface TestReporterOnEndEvent
+        stats as rooibos.Stats
+    end interface
+end namespace
+</code></pre>
+        </article>
+    </section>
 
 
 
